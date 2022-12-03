@@ -4,10 +4,6 @@ using System;
 public class State : Node {
   private FiniteStateMachine fsm;
 
-  public override void _Process(float delta) {
-    ProcessState();
-  }
-
   public virtual void ProcessState() {
     //Put your state logic here
   }

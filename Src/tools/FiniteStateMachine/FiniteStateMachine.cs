@@ -19,6 +19,14 @@ public class FiniteStateMachine : Node {
     }
     state = states[0];
   }
+
+  public override void _Process(float delta) {
+    ProcessStates();
+
+    if (state != null) {
+      state.ProcessState();
+    }
+  }
   
   public virtual void ProcessStates() {
   /*
